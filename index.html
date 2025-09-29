@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutika Kale | Cloud Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #3a86ff;
+            --secondary-color: #4cc9f0;
+            --dark-color: #2b2d42;
+            --light-color: #f8f9fa;
+            --accent-color: #7209b7;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            margin-bottom: 1rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 1.5rem;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .social-link {
+            color: white;
+            background: rgba(255, 255, 255, 0.2);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            background: white;
+            color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        section {
+            padding: 3rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--accent-color);
+        }
+        
+        .cloud-skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .skill-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .skill-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .skill-card i {
+            font-size: 2rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+        
+        .education-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+        
+        .item-title {
+            font-weight: bold;
+        }
+        
+        footer {
+            background: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .cloud-skills {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="https://via.placeholder.com/150" alt="Rutika Kale" class="profile-img">
+            <h1>Rutika Laxman Kale</h1>
+            <p class="tagline">Cloud Engineering Specialist</p>
+            
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/rutika-kale-1a013a730" class="social-link" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:kalerutika730@gmail.com" class="social-link" target="_blank">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="tel:+919699733563" class="social-link" target="_blank">
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>kalerutika730@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+91 9699733563</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Kanadi, Yeola, Dist Nashik</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section id="about">
+            <h2>Cloud Engineering Focus</h2>
+            <p>As a dedicated Cloud Engineer, I specialize in designing, implementing, and maintaining cloud infrastructure solutions. My expertise lies in creating scalable, secure, and efficient cloud environments that support business objectives and technological innovation.</p>
+        </section>
+        
+        <section id="skills">
+            <h2>Cloud Engineering Skills</h2>
+            <div class="cloud-skills">
+                <div class="skill-card">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Cloud Architecture</h3>
+                    <p>Designing and implementing scalable cloud infrastructure solutions tailored to business needs.</p>
+                </div>
+                
+                <div class="skill-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Cloud Security</h3>
+                    <p>Implementing robust security measures and compliance standards for cloud environments.</p>
+                </div>
+                
+                <div class="skill-card">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Cloud Networking</h3>
+                    <p>Configuring and optimizing cloud network infrastructure for performance and reliability.</p>
+                </div>
+                
+                <div class="skill-card">
+                    <i class="fas fa-server"></i>
+                    <h3>Cloud Deployment</h3>
+                    <p>Automating deployment processes and managing cloud resources efficiently.</p>
+                </div>
+                
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Cloud Storage</h3>
+                    <p>Designing and managing scalable cloud storage solutions for optimal performance.</p>
+                </div>
+                
+                <div class="skill-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Cloud Optimization</h3>
+                    <p>Monitoring and optimizing cloud resources for cost-efficiency and performance.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <div class="item-header">
+                    <h3 class="item-title">Bachelor of Computer Science</h3>
+                    <span class="item-date">CGPA: 8.20</span>
+                </div>
+                <p>Savitribai Phule University, Pune</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Rutika Kale - Cloud Engineering Specialist</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple animation for skill cards
+        document.addEventListener('DOMContentLoaded', function() {
+            const skillCards = document.querySelectorAll('.skill-card');
+            
+            skillCards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'all 0.5s ease';
+                
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 200 * index);
+            });
+            
+            // You can replace the placeholder image with your actual photo
+            // document.querySelector('.profile-img').src = 'your-photo-url.jpg';
+        });
+    </script>
+</body>
+</html>
